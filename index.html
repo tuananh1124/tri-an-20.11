@@ -32,7 +32,7 @@
         }
 
         body {
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
             background: var(--cream);
             color: var(--text-dark);
             overflow-x: hidden;
@@ -72,7 +72,7 @@
         }
 
         .logo {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
             font-style: italic;
             font-size: 1.4rem;
             color: var(--blue-deep);
@@ -160,7 +160,7 @@
         }
 
         #home h1 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
             font-style: italic;
             font-size: 5.5rem;
             font-weight: 700;
@@ -207,7 +207,7 @@
         }
 
         .cd-num {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
             font-size: 2rem;
             font-weight: 700;
             color: var(--blue-deep);
@@ -252,7 +252,7 @@
         }
 
         .section-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
             font-style: italic;
             font-size: 2.6rem;
             color: var(--blue-deep);
@@ -298,7 +298,7 @@
         .stat-item {}
 
         .stat-num {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
             font-size: 3rem;
             font-weight: 700;
             color: white;
@@ -343,7 +343,7 @@
 
         .glass-card::before {
             content: '\201C';
-            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
             font-size: 8rem;
             color: var(--blue-pale);
             position: absolute;
@@ -353,7 +353,7 @@
         }
 
         .poem-text {
-            font-family: 'Cormorant Infant', serif;
+            font-family: 'Roboto', sans-serif;
             font-style: italic;
             font-size: 1.85rem;
             line-height: 2;
@@ -536,7 +536,7 @@
         }
 
         .music-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
             font-size: 1.4rem;
             color: var(--blue-deep);
             margin-bottom: 6px;
@@ -560,7 +560,7 @@
         }
 
         .music-quote {
-            font-family: 'Cormorant Infant', serif;
+            font-family: 'Roboto', sans-serif;
             font-style: italic;
             font-size: 1.15rem;
             color: var(--text-soft);
@@ -598,7 +598,7 @@
         }
 
         .value-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
             font-style: italic;
             font-size: 1.3rem;
             color: var(--blue-deep);
@@ -633,7 +633,7 @@
             border: 1px solid rgba(37, 99, 168, 0.12);
             padding: 36px 32px;
             border-radius: 4px;
-            font-family: 'Cormorant Infant', serif;
+            font-family: 'Roboto', sans-serif;
             font-style: italic;
             font-size: 1.2rem;
             color: var(--text-mid);
@@ -657,7 +657,7 @@
         }
 
         .wish-author {
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-size: 0.65rem;
             letter-spacing: 2px;
@@ -787,7 +787,7 @@
 <body>
 
     <nav>
-        <img width="50px" src="logo.jpg" alt="Tri Ân 20.11" class="logo">
+        <div class="logo">From 12a5 with love</div>
         <ul>
             <li><a href="#home">Trang chủ</a></li>
             <li><a href="#poem">Bài thơ</a></li>
@@ -1038,19 +1038,76 @@
             const target = new Date('2025-11-20T00:00:00');
             const now = new Date();
             let diff = target - now;
+
             if (diff < 0) {
-                document.getElementById('countdown').innerHTML = '<p style="color:var(--blue-mid);letter-spacing:4px;font-size:0.8rem;">🎉 Chào mừng Ngày Nhà Giáo Việt Nam 20.11!</p>';
+                document.getElementById('countdown').innerHTML = `
+               <div style="text-align:center;">
+    <p style="color:var(--blue-mid);letter-spacing:4px;font-size:0.8rem; margin-bottom:10px;">
+        🎉 Chào mừng Ngày Nhà Giáo Việt Nam 20.11!
+    </p>
+
+    <img 
+        src="qr.jpg"
+        alt="20-11"
+        style="max-width:50%; width:150px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);"
+    >
+ <div style="text-align:center; margin-bottom:20px;">
+    
+    <!-- MŨI TÊN -->
+    <div style="
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 12px solid #000;
+    "></div>
+
+    <!-- TEXT -->
+ <p style="
+    font-size: 0.95rem;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 6px;
+    padding: 10px 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+
+    color: #000;
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, rgba(255,255,255,0.6), rgba(255,255,255,0.2));
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    box-shadow: 
+        0 6px 20px rgba(0, 0, 0, 0.15),
+        inset 0 1px 2px rgba(255, 255, 255, 0.5);
+">
+    Gặp chúng mình ở bất cứ đâu!
+</p>
+     
+
+</div>
+</div>
+            `;
                 return;
             }
+
             const d = Math.floor(diff / 86400000);
             const h = Math.floor((diff % 86400000) / 3600000);
             const m = Math.floor((diff % 3600000) / 60000);
             const s = Math.floor((diff % 60000) / 1000);
+
             document.getElementById('cd-d').textContent = String(d).padStart(2, '0');
             document.getElementById('cd-h').textContent = String(h).padStart(2, '0');
             document.getElementById('cd-m').textContent = String(m).padStart(2, '0');
             document.getElementById('cd-s').textContent = String(s).padStart(2, '0');
         }
+
         updateCountdown();
         setInterval(updateCountdown, 1000);
 
@@ -1069,7 +1126,6 @@
             document.querySelectorAll('.thumb').forEach((t, i) => t.classList.toggle('active', i === current));
         }
 
-        // build dots & thumbs
         slides.forEach((slide, i) => {
             const dot = document.createElement('button');
             dot.className = 'dot' + (i === 0 ? ' active' : '');
@@ -1090,7 +1146,6 @@
         function resetAuto() { clearInterval(autoTimer); autoTimer = setInterval(() => goTo(current + 1), 4000); }
         autoTimer = setInterval(() => goTo(current + 1), 4000);
 
-        // swipe support
         let startX = 0;
         track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; });
         track.addEventListener('touchend', e => {
