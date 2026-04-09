@@ -132,7 +132,7 @@
             inset: 0;
             background:
                 linear-gradient(160deg, rgba(232, 242, 251, 0.88) 0%, rgba(247, 250, 253, 0.93) 55%, rgba(168, 206, 240, 0.6) 100%),
-                url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&q=80&w=1500') center/cover;
+                url('background-20-11-8.jpg') center/cover;
             z-index: 0;
         }
 
@@ -778,6 +778,8 @@
             .slide img {
                 height: 300px;
             }
+
+
         }
     </style>
 </head>
@@ -785,7 +787,7 @@
 <body>
 
     <nav>
-        <div class="logo">Tri Ân 20.11</div>
+        <img width="50px" src="logo.jpg" alt="Tri Ân 20.11" class="logo">
         <ul>
             <li><a href="#home">Trang chủ</a></li>
             <li><a href="#poem">Bài thơ</a></li>
@@ -854,10 +856,10 @@
             </div>
             <div class="glass-card">
                 <div class="poem-text">
-                    Ơn Thầy biển rộng bao la<br>
-                    Nghĩa Cô cao tựa Thái Sơn điệp trùng<br>
-                    Dạy con nét chữ nên người<br>
-                    Cho con vững bước giữa đời thênh thang.
+                    Không chỉ dạy chữ thành tài<br>
+                    Thầy Cô dạy cả ngày mai làm người<br>
+                    Một lời cảm ơn chưa đủ<br>
+                    Ngàn lần vẫn thấy chưa vơi nghĩa tình.
                 </div>
                 <div class="poem-divider"></div>
             </div>
@@ -967,7 +969,7 @@
         <!-- WISHES -->
         <section id="wishes" class="section">
             <span class="section-label">Lời chúc</span>
-            <h2 class="section-title">Lời Chúc Ngọt Ngào</h2>
+            <h2 class="section-title">Gửi Ngàn Lời Chúc Yêu Thương</h2>
             <div class="ornament">
                 <span class="ornament-line"></span><span class="ornament-dot"></span><span
                     class="ornament-line right"></span>
@@ -991,7 +993,7 @@
         <!-- MEMBERS -->
         <section id="members" class="section">
             <span class="section-label">Tập thể</span>
-            <h2 class="section-title">Tập Thể Lớp Chúng Mình</h2>
+            <h2 class="section-title">LỚP 12A5</h2>
             <div class="ornament">
                 <span class="ornament-line"></span><span class="ornament-dot"></span><span
                     class="ornament-line right"></span>
@@ -1002,14 +1004,14 @@
     </div>
 
     <footer>
-        <p>Thực hiện với tất cả lòng biết ơn ❤️</p>
+        <p>Gửi gắm trong từng chi tiết là lòng biết ơn chân thành ❤️</p>
         <span class="footer-deco"></span>
         <p>Lớp 12A5 · 2025 — 2026 · Trường THPT An Phước</p>
     </footer>
 
     <script>
         // ── AUTOPLAY MUSIC ──
-        const audio = document.querySelector('audio');
+        // const audio = document.querySelector('audio');
         let played = false;
         function tryPlay() {
             if (!played) audio.play().then(() => { played = true; }).catch(() => { });
